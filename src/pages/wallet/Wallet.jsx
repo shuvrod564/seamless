@@ -64,7 +64,7 @@ const Wallet = () => {
     return (
         <>
              
-            <div className="md:mt-10 mt-6">
+            <div className="">
                 <div className="relative">
                     <Tabs defaultActiveKey="1" items={items} onChange={onChange} className='relative z-10' />
                     <div className="w-full h-0.5 bg-[#D9D9D9] absolute top-[44px] left-0 z-0"></div>
