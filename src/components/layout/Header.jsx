@@ -22,7 +22,7 @@ const items = [
 
 const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
     return (
-        <div className='sm:px-5 px-3 py-3 bg-dark rounded-lg flex items-center justify-between mb-8'>
+        <div className='sm:px-5 px-3 py-3 bg-dark rounded-lg flex items-center justify-between md:mb-8 mb-4'>
             <div className="inline-flex items-center gap-3">
                 <button type='button' onClick={()=>setResMenu(!resMenu)} className="text-3xl sm:text-3xl text-white lg:hidden">
                     <HiBars3 />

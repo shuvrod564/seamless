@@ -25,7 +25,15 @@ function App() {
   ]);
 
   return (
-    <ConfigProvider>
+    <ConfigProvider 
+      theme={{
+        token: {
+          // Seed Token
+          colorPrimary: '#00b96b', 
+          fontFamily: 'Open Sans, sans-serif'
+        },
+      }}
+    >
        <RouterProvider router={router} />
     </ConfigProvider>
   )

@@ -1,0 +1,7 @@
+.chat__list__data { max-width: 300px; }
+.chat__list__data li { color: #404040; }
+.chat__list__data li .icon { width: 12px;height: 12px;border-radius: 50%; }
+.chat__list__data li .icon.bg-blue { background-color: #0070FF; }
+.chat__list__data li .icon.bg-green { background-color: #14BA6D; }
+.chat__list__data li .icon.bg-danger { background-color: #E3566E; }
+.chat__list__data li .icon.bg-yellow { background-color: #FFC700; }

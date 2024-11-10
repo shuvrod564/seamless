@@ -10,7 +10,8 @@ export default {
         primary: '#4681FF',
         dark: '#232E51',
         'primary-light': '#5E74B7',
-        'gray-bg': '#EEF3F9'
+        'gray-bg': '#EEF3F9',
+        'thead-bg': '#D5E3FF'
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif']

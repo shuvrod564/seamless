@@ -4,11 +4,18 @@
 @tailwind utilities;
 
 
-* { @apply m-0 p-0; box-sizing: border-box; }
+* { @apply m-0 p-0; box-sizing: border-box;font-family: 'Open Sans', sans-serif; }
+html { text-rendering: optimizeLegibility;overflow-x: hidden; }
 body { font-family: 'Open Sans', sans-serif; @apply bg-gray-bg sm:p-4 p-2; }
 
 button, a { @apply transition-all duration-300; }
 
-.table { @apply w-full border-collapse }
+.table { @apply w-full border-collapse text-left }
+.table th { @apply bg-thead-bg !text-primary font-bold uppercase }
 .table th, .table td { @apply px-5 py-3 text-dark }
 
+
+/* global antd table styles */
+.ant-table-wrapper .ant-table-thead .ant-table-cell { @apply !bg-thead-bg !text-primary font-bold uppercase !py-3 }
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > :first-child { border-start-start-radius: 0 !important; } 
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > :last-child { border-start-end-radius: 0 !important; }
