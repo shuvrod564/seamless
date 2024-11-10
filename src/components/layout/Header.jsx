@@ -2,7 +2,7 @@ import React from 'react'
 import { Dropdown } from 'antd';
 import { PiUserCircleFill } from 'react-icons/pi';
 import { FaBell } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HiBars3 } from 'react-icons/hi2';
 
 
@@ -21,13 +21,19 @@ const items = [
 ];
 
 const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
+    const router = useLocation();
+
     return (
         <div className='sm:px-5 px-3 py-3 bg-dark rounded-lg flex items-center justify-between md:mb-8 mb-4'>
             <div className="inline-flex items-center gap-3">
                 <button type='button' onClick={()=>setResMenu(!resMenu)} className="text-3xl sm:text-3xl text-white lg:hidden">
                     <HiBars3 />
                 </button>
-                <h1 className='text-base md:text-lg lg:text-xl font-semibold text-white m-0'>Dashboard</h1>
+                <h1 className='text-base md:text-lg lg:text-xl font-semibold text-white m-0'>
+                    { router.pathname === '/' && <>Dashboard</> }
+                    { router.pathname === '/paying' && <>Paying</> }
+                    { router.pathname === '/wallet' && <>Wallet</> }
+                </h1>
             </div>
 
             <div className="inline-flex items-center gap-4">

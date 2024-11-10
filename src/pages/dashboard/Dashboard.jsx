@@ -195,8 +195,7 @@ const Dashboard = () => {
         <h2 className="text-xl font-bold text-dark px-5 py-3">Transactions</h2>
         <Table columns={columns} dataSource={data} pagination={false}
           scroll={{ x: 600 }}
-        />
-
+        /> 
       </div>
 
 

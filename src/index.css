@@ -19,3 +19,14 @@ button, a { @apply transition-all duration-300; }
 .ant-table-wrapper .ant-table-thead .ant-table-cell { @apply !bg-thead-bg !text-primary font-bold uppercase !py-3 }
 .ant-table-wrapper .ant-table-container table > thead > tr:first-child > :first-child { border-start-start-radius: 0 !important; } 
 .ant-table-wrapper .ant-table-container table > thead > tr:first-child > :last-child { border-start-end-radius: 0 !important; }
+.ant-table-wrapper .ant-table-tbody > tr > td { color: #5B5D66;border-bottom: 0; }
+
+.ant-tabs-tab-active  { @apply bg-black relative z-20}
+
+/* global button styles */
+.btn-primary {
+    @apply text-base h-12 font-semibold bg-primary text-white px-5 py-3 rounded-lg hover:bg-primary-light focus:bg-primary-light
+}
+.btn-primary.secondary {
+    @apply bg-secondary hover:bg-slate-300 hover:text-primary focus:bg-primary-light
+}

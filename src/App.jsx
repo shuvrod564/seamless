@@ -6,6 +6,7 @@ import Login from "./pages/login/Login"
 import Dashboard from './pages/dashboard/Dashboard';
 import Layout from './components/layout/Layout';
 import Paying from './pages/paying/Paying';
+import Wallet from './pages/wallet/Wallet';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       children: [
         { path: '/', element: <Dashboard /> },
         { path: '/paying', element: <Paying /> },
+        { path: '/wallet', element: <Wallet /> },
       ]
     },
     {
@@ -29,7 +31,7 @@ function App() {
       theme={{
         token: {
           // Seed Token
-          colorPrimary: '#00b96b', 
+          colorPrimary: '#4681FF', 
           fontFamily: 'Open Sans, sans-serif'
         },
       }}
