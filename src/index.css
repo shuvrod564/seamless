@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-* { @apply m-0 p-0; box-sizing: border-box;font-family: 'Open Sans', sans-serif; }
+* { @apply m-0 p-0; box-sizing: border-box;font-family: 'Open Sans', sans-serif !important; }
 html { text-rendering: optimizeLegibility;overflow-x: hidden; }
 body { font-family: 'Open Sans', sans-serif; @apply bg-gray-bg sm:p-4 p-2; }
 

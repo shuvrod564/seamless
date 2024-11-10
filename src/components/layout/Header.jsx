@@ -24,7 +24,7 @@ const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
     const router = useLocation();
 
     return (
-        <div className='sm:px-5 px-3 py-3 bg-dark rounded-lg flex items-center justify-between md:mb-8 mb-4'>
+        <div className={`sm:px-5 px-3 py-3  rounded-lg flex items-center justify-between md:mb-8 mb-4 ${router.pathname === '/wallet' ? 'bg-[#3260FF]' : 'bg-dark'}`}>
             <div className="inline-flex items-center gap-3">
                 <button type='button' onClick={()=>setResMenu(!resMenu)} className="text-3xl sm:text-3xl text-white lg:hidden">
                     <HiBars3 />
@@ -46,7 +46,7 @@ const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
                     }}
                     trigger={['click']}
                 >
-                    <button className='text-[#A0B0E1] text-base font-semibold inline-flex items-center gap-2'>
+                    <button className={` text-base font-semibold inline-flex items-center gap-2 uppercase ${router.pathname === '/wallet' ? 'text-white' : 'text-[#A0B0E1]'}`}>
                         <PiUserCircleFill className='text-3xl lg:text-3xl' />
                         <span className='hidden sm:block'>Dhanoo K.</span>
                     </button>

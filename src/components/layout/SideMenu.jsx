@@ -46,7 +46,7 @@ const SideMenu = ({ resMenu, setResMenu, collapseMenu, setCollapseMenu }) => {
 
   return (
     <>
-        <aside className={`w-[280px] bg-dark fixed lg:top-4 top-0 lg:left-4 left-0 lg:min-h-[calc(100vh-32px)] min-h-screen rounded-lg overflow-hidden
+        <aside className={`w-[280px] bg-dark fixed lg:top-4 top-0 lg:left-4 left-0 lg:min-h-[calc(100vh-32px)] min-h-screen rounded-lg overflow-hidden z-40
                 -translate-x-full invisible lg:translate-x-0 lg:visible transition-all duration-300
                 ${resMenu ? "!translate-x-0 !visible" : ""}
                 ${collapseMenu ? 'lg:w-[80px]' : ''}
