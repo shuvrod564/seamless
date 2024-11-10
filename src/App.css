@@ -1,0 +1,6 @@
+
+
+/* side menu active link customize styles */
+.menu__link svg path { @apply fill-primary-light; }
+.menu__link.active svg path { @apply fill-white; }
+.menu__link.active { @apply text-white }
