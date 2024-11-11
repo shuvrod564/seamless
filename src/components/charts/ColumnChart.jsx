@@ -84,19 +84,19 @@ const ColumnChart = ({profileTrades}) => {
     }
   ];
   
-  console.log(result);
+  // console.log(result);
   
   
 
-  // const series = [{
-  //   name: 'Buy',
-  //   data: [44, 55, 57, 56, 61, 58, 63]
-  // }, {
-  //   name: 'Sell',
-  //   data: [76, 85, 101, 98, 87, 105, 91]
-  // }];.
+  const series = [{
+    name: 'Buy',
+    data: [44, 55, 57, 56, 61, 58, 63]
+  }, {
+    name: 'Sell',
+    data: [76, 85, 101, 98, 87, 105, 91]
+  }];
 
-  const series = result;
+  // const series = result;
 
   const options = {
     chart: {
@@ -141,8 +141,8 @@ const ColumnChart = ({profileTrades}) => {
   };
 
   return (
-    <div>
-      <Chart options={options} series={series} type="bar" height={450} />
+    <div className='w-full'>
+      <Chart options={options} series={series} type="bar" height={450} width={'100%'} className="w-full" />
 
 
 

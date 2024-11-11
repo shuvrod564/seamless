@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, { useEffect, useState } from 'react' 
 import { Dropdown } from 'antd';
 import { PiUserCircleFill } from 'react-icons/pi';
 import { FaBell } from 'react-icons/fa';
@@ -22,9 +22,19 @@ const items = [
 
 const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
     const router = useLocation();
+    const [menuMode, setMenuMode] = useState('light'); 
+
+    // set sidebar menu bg color based on url
+    useEffect(()=>{
+        if (router.pathname === '/wallet' || router.pathname === '/payouts') {
+            setMenuMode('dark');
+        } else {
+            setMenuMode('light');
+        }  
+    }, [router.pathname])
 
     return (
-        <div className={`sm:px-5 px-3 py-3  rounded-lg flex items-center justify-between md:mb-8 mb-4 ${router.pathname === '/wallet' ? 'bg-[#3260FF]' : 'bg-dark'}`}>
+        <div className={`sm:px-5 px-3 py-3  rounded-lg flex items-center justify-between md:mb-8 mb-4 ${menuMode === 'dark' ? 'bg-[#3260FF]' : 'bg-dark'}`}>
             <div className="inline-flex items-center gap-3">
                 <button type='button' onClick={()=>setResMenu(!resMenu)} className="text-3xl sm:text-3xl text-white lg:hidden">
                     <HiBars3 />
@@ -33,11 +43,12 @@ const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
                     { router.pathname === '/' && <>Dashboard</> }
                     { router.pathname === '/paying' && <>Paying</> }
                     { router.pathname === '/wallet' && <>Wallet</> }
+                    { router.pathname === '/payouts' && <>Payouts</> }
                 </h1>
             </div>
 
             <div className="inline-flex items-center gap-4">
-                <button type='button' className="w-8 h-8 rounded-full inline-flex items-center justify-center text-xl text-[#A0B0E1] hover:bg-black/50">
+                <button type='button' className={`w-8 h-8 rounded-full inline-flex items-center justify-center text-xl  hover:bg-white/50 ${menuMode === 'dark' ? 'text-white' : 'text-[#A0B0E1]'}`}>
                     <FaBell />
                 </button>
                 <Dropdown
@@ -46,9 +57,9 @@ const Header = ({resMenu, setResMenu, collapseMenu, setCollapseMenu}) => {
                     }}
                     trigger={['click']}
                 >
-                    <button className={` text-base font-semibold inline-flex items-center gap-2 uppercase ${router.pathname === '/wallet' ? 'text-white' : 'text-[#A0B0E1]'}`}>
+                    <button className={` text-base font-semibold inline-flex items-center gap-2 uppercase ${menuMode === 'dark' ? 'text-white' : 'text-[#A0B0E1]'}`}>
                         <PiUserCircleFill className='text-3xl lg:text-3xl' />
-                        <span className='hidden sm:block'>Dhanoo K.</span>
+                        <span className='hidden sm:block'>SHERU</span>
                     </button>
                 </Dropdown>
             </div>

@@ -45,7 +45,7 @@ const PieChart = () => {
       });
     }
     setLabel(label);
-    console.log(label);
+    // console.log(label);
   }, [JSON.stringify(groupedData)]);
 
   const options = {

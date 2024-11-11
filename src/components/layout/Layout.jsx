@@ -40,7 +40,7 @@ const Layout = () => {
 
 
     return (
-        <main className={`${collapseMenu ? 'lg:pl-[100px]' : 'lg:pl-[312px]'} transition-all duration-300`}>
+        <main className={`${collapseMenu ? 'lg:pl-[100px]' : 'lg:pl-[300px]'} transition-all duration-300`}>
             <SideMenu  resMenu={resMenu} setResMenu={setResMenu} collapseMenu={collapseMenu} setCollapseMenu={setCollapseMenu} />
             <div className="content">
                 <Header  resMenu={resMenu} setResMenu={setResMenu} />

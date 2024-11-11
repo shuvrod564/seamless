@@ -7,6 +7,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Layout from './components/layout/Layout';
 import Paying from './pages/paying/Paying';
 import Wallet from './pages/wallet/Wallet';
+import Payouts from './pages/payouts/Payouts';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
         { path: '/', element: <Dashboard /> },
         { path: '/paying', element: <Paying /> },
         { path: '/wallet', element: <Wallet /> },
+        { path: '/payouts', element: <Payouts /> },
       ]
     },
     {

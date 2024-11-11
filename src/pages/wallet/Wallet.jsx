@@ -10,7 +10,7 @@ const onChange = (key) => {
 const Wallet = () => {
     const [historyTable, setHistoryTable] = useState(false);
 
-    console.log(historyTable);
+    // console.log(historyTable);
     
 
     const items = [

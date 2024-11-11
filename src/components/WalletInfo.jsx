@@ -14,7 +14,7 @@ const WalletInfo = ({ historyTable, setHistoryTable }) => {
                         <GoArrowRight />
                     </Link>
                     <img src="/assets/images/wallet-card-bg-image.png" className='absolute top-0 left-0 object-cover w-full h-full' alt="Layer" />
-                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5">Company name</h2>
+                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5 lg:mb-8">Company name</h2>
                     <p className="text-sm sm:text-base lg:text-[17px] text-white mb-2">
                     Trade Wallet
                     </p>
@@ -29,7 +29,7 @@ const WalletInfo = ({ historyTable, setHistoryTable }) => {
                         <GoArrowRight />
                     </Link>
                     <img src="/assets/images/wallet-card-bg-image-light.png" className='absolute top-0 left-0 object-cover w-full h-full' alt="Layer" />
-                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5">Company name</h2>
+                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5 lg:mb-8">Company name</h2>
                     <p className="text-sm sm:text-base lg:text-[17px] text-white mb-2">
                     Trade Wallet
                     </p>
@@ -44,7 +44,7 @@ const WalletInfo = ({ historyTable, setHistoryTable }) => {
                         <GoArrowRight />
                     </Link>
                     <img src="/assets/images/wallet-card-bg-image-white.png" className='absolute top-0 left-0 object-cover w-full h-full' alt="Layer" />
-                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5">Company name</h2>
+                    <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-5 lg:mb-8">Company name</h2>
                     <p className="text-sm sm:text-base lg:text-[17px] text-white mb-2">
                     Trade Wallet
                     </p>
