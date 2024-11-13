@@ -92,7 +92,7 @@ const SideMenu = ({ resMenu, setResMenu, collapseMenu, setCollapseMenu }) => {
                                 <Link to={link.path} className={`
                                         menu__link flex items-center gap-3 px-4 py-2.5 text-base md:text-lg font-semibold text-white whitespace-nowrap rounded-tl-lg rounded-bl-lg hover:bg-white/25
                                     
-                                        ${router.pathname === link.path ? 'bg-body-bg !text-primary active hover:bg-body-bg' : 'text-primary-light'} 
+                                        ${router.pathname === link.path ? 'bg-body-bg !text-primary active hover:!bg-body-bg' : 'text-primary-light'} 
                                     `}>
                                     <span className='w-7 h-7 flex items-center justify-center'> 
                                         {link.icon}
