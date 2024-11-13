@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd'
+import { Col, Row, Select } from 'antd'
 import React from 'react'
 import { DatePicker } from "antd"; 
 
@@ -17,37 +17,62 @@ const FilterForm = () => {
             >
                 <Col lg={8} md={12} sm={24} xs={24}>
                     <div className="form-group">
-                        <label htmlFor="fullName" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Full name</label>
+                        <label htmlFor="fullName" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Client Id</label>
                         <input
                             type="text"
                             name='fullName'
-                            className='w-full h-12 px-4 py-2 rounded-lg bg-white'
+                            className='input'
                         />
                     </div>
                 </Col>
                 <Col lg={8} md={12} sm={24} xs={24}>
                     <div className="form-group">
-                        <label htmlFor="emailAddress" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Email address</label>
+                        <label htmlFor="emailAddress" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Amount</label>
                         <input
                             type="text"
                             name='emailAddress'
-                            className='w-full h-12 px-4 py-2 rounded-lg bg-white'
+                            className='input'
                         />
                     </div>
                 </Col>
                 <Col lg={8} md={12} sm={24} xs={24}>
                     <div className="form-group">
-                        <label htmlFor="payment " className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Payment</label>
+                        <label htmlFor="payment " className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Status</label>
+                        <Select
+                            defaultValue="Please check"
+                            className="!w-full !h-12 !border-0" 
+                            size='large'
+                            options={[
+                                {
+                                    value: 'Please check',
+                                    label: 'Please check',
+                                    disabled: true,
+                                },
+                                {
+                                    value: 'active',
+                                    label: 'Active',
+                                },
+                                {
+                                    value: 'pending',
+                                    label: 'Pending',
+                                }, 
+                            ]}
+                        />
+                    </div>
+                </Col>
+                <Col lg={8} md={12} sm={24} xs={24}>
+                    <div className="form-group">
+                        <label htmlFor="emailAddress" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Merchant Trx. Id</label>
                         <input
                             type="text"
-                            name='payment '
-                            className='w-full h-12 px-4 py-2 rounded-lg bg-white'
+                            name='emailAddress'
+                            className='input'
                         />
                     </div>
                 </Col>
                 <Col lg={8} md={12} sm={24} xs={24}>
                     <div className="form-group">
-                        <label htmlFor="date" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Select Date</label>
+                        <label htmlFor="date" className='block text-[#6E6E6E] text-sm md:text-[15px] mb-1'>Date & Time</label>
                         <DatePicker
                             onChange={onChange}
                             className='!w-full !h-12'

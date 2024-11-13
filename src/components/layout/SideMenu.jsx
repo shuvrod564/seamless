@@ -56,16 +56,15 @@ const SideMenu = ({ resMenu, setResMenu, collapseMenu, setCollapseMenu }) => {
 
   return (
     <>
-        <aside className={`w-[280px]  fixed lg:top-4 top-0 lg:left-4 left-0 lg:min-h-[calc(100vh-32px)] min-h-screen rounded-lg overflow-hidden z-40
+        <aside className={`w-[280px] bg-primary fixed top-0 left-0 min-h-screen overflow-hidden z-40
                 -translate-x-full invisible lg:translate-x-0 lg:visible transition-all duration-300
                 ${resMenu ? "!translate-x-0 !visible" : ""}
-                ${collapseMenu ? 'lg:w-[80px]' : ''}
-                ${menuMode === 'dark' ? 'bg-[#192839]' : 'bg-dark'}
+                ${collapseMenu ? 'lg:w-[80px]' : ''} 
             `}>
-            <div className={`px-5 py-3  flex items-center justify-between ${menuMode === 'dark' ? 'bg-[#192839]' : 'bg-[#152248]'}`}>
+            <div className={`px-5 py-3  flex items-center justify-between`}>
                 <Link to={'/'} className={`${collapseMenu ? 'lg:hidden' : 'inline-block'}`}>
                     <img 
-                        src={menuMode === 'light' ? '/assets/images/seamless-logo.png' : '/assets/images/seamless-logo-white.png'} 
+                        src={'/assets/images/seamless-logo-white.png'} 
                         alt={'Seamless'} 
                         className='w-auto h-5 md:h-6 lg:h-7 ' 
                     />
@@ -85,15 +84,15 @@ const SideMenu = ({ resMenu, setResMenu, collapseMenu, setCollapseMenu }) => {
                     <IoCloseCircleOutline />
                 </button>
             </div>
-            <div className="px-3 py-4">
+            <div className="pl-3 py-4">
                 <ul>
                     {
                         linkList.map((link, index) => (
                             <li key={index} className="mb-3">
                                 <Link to={link.path} className={`
-                                        menu__link flex items-center gap-3 px-4 py-2 text-base md:text-lg font-semibold  hover:text-primary whitespace-nowrap
-                                        ${menuMode === 'dark' ? 'text-[#B2C4D8] dark' : 'text-primary-light'} 
-                                        ${router.pathname === link.path ? 'text-white active' : 'text-primary-light'} 
+                                        menu__link flex items-center gap-3 px-4 py-2.5 text-base md:text-lg font-semibold text-white whitespace-nowrap rounded-tl-lg rounded-bl-lg hover:bg-white/25
+                                    
+                                        ${router.pathname === link.path ? 'bg-body-bg !text-primary active hover:bg-body-bg' : 'text-primary-light'} 
                                     `}>
                                     <span className='w-7 h-7 flex items-center justify-center'> 
                                         {link.icon}
