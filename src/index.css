@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-* { @apply m-0 p-0; box-sizing: border-box;font-family: 'Open Sans', sans-serif !important; }
+* { @apply m-0 p-0; box-sizing: border-box;font-family: 'Satoshi', sans-serif !important; }
 html { text-rendering: optimizeLegibility;overflow-x: hidden; }
-body { font-family: 'Open Sans', sans-serif; @apply bg-body-bg; }
+body { font-family: 'Satoshi', sans-serif; @apply bg-body-bg; }
 
 button, a { @apply transition-all duration-300; }
 

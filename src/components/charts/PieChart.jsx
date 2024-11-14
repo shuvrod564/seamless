@@ -5,15 +5,11 @@ import "./styles.css";
 const PieChart = () => {
   // Static data for demonstration
   const staticData = [
-    { exchange: "MCX", profit_and_loss: 100 },
-    { exchange: "NFO", profit_and_loss: 200 },
-    { exchange: "CRYPTO", profit_and_loss: 50 },
-    { exchange: "FX", profit_and_loss: 150 },
-    { exchange: "CDS", profit_and_loss: 75 },
-    { exchange: "US", profit_and_loss: 300 }
+    { exchange: "Payout", profit_and_loss: 8141881.2 },
+    { exchange: "Paying", profit_and_loss: 36638465.14 }, 
   ];
 
-  let type = ["MCX", "NFO", "CRYPTO", "FX", "CDS", "US"];
+  let type = ["Payout", "Paying" ];
   const [label, setLabel] = useState([]);
   
   const groupedData = staticData.reduce((acc, item) => {
@@ -69,7 +65,7 @@ const PieChart = () => {
     dataLabels: {
       enabled: false, // Hides the data labels
     },
-    colors: ["#0070FF", "#14BA6D", "#E3566E", "#FFC700"],
+    colors: ["#3A7AFE", "#17E99C", "#E3566E", "#FFC700"],
   };
 
   return (

@@ -34,7 +34,7 @@ function App() {
         token: {
           // Seed Token
           colorPrimary: '#4681FF', 
-          fontFamily: 'Open Sans, sans-serif'
+          fontFamily: 'Satoshi, sans-serif'
         },
       }}
     >

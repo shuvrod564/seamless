@@ -89,10 +89,10 @@ const ColumnChart = ({profileTrades}) => {
   
 
   const series = [{
-    name: 'Buy',
+    name: 'Payout',
     data: [44, 55, 57, 56, 61, 58, 63]
   }, {
-    name: 'Sell',
+    name: 'Paying',
     data: [76, 85, 101, 98, 87, 105, 91]
   }];
 
@@ -119,7 +119,7 @@ const ColumnChart = ({profileTrades}) => {
       colors: ['transparent']
     },
     xaxis: {
-      categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      categories: ['Nov 09', 'Nov 10', 'Nov 11', 'Nov 12', 'Nov 13', 'Nov 14', 'Nov 15'],
     },
     // yaxis: {
     //   title: {
@@ -137,7 +137,7 @@ const ColumnChart = ({profileTrades}) => {
         }
       }
     },
-    colors: ['#FF5733', '#14BA6D']
+    colors: ['#3A7AFE', '#17E99C']
   };
 
   return (

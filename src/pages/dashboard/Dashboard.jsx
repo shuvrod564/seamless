@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import PieChart from '../../components/charts/PieChart';
 import { Select } from "antd";
 import ColumnChart from '../../components/charts/ColumnChart';
+import LineChart from '../../components/charts/LineChart';
 
 const columns = [
   {
@@ -96,57 +97,64 @@ const Dashboard = () => {
         ]}
       >
         <Col md={8} sm={12} xs={24}>
-          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#FEDE79] rounded-lg relative">
-            <Link to={"#"} className='text-3xl absolute top-4 right-4 text-[#B18A0D] hover:text-dark'>
-              <BsChevronRight />
-            </Link>
-            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#B18A0D]'>PAYING</p>
-            <p className=' uppercase text-2xl md:text-4xl lg:text-6xl font-bold text-[#B18A0D]'>$5869</p>
+          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#3A7AFE] rounded-lg relative"> 
+            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Total Paying</p>
+            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹7,00,000</p>
+            <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>18,995 User Payout</p>
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
-          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#9BF688] rounded-lg relative">
-            <Link to={"#"} className='text-3xl absolute top-4 right-4 text-[#0B7D1C] hover:text-dark'>
-              <BsChevronRight />
-            </Link>
-            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#0B7D1C]'>pay outs </p>
-            <p className=' uppercase text-2xl md:text-4xl lg:text-6xl font-bold text-[#0B7D1C]'>$5869</p>
+          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#00AFEF] rounded-lg relative"> 
+            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Total payouts</p>
+            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹10 Lac</p>
+            <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>25,550 User Payout</p>
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
-          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#75DFFF] rounded-lg relative">
-            <Link to={"#"} className='text-3xl absolute top-4 right-4 text-[#076A88] hover:text-dark'>
-              <BsChevronRight />
-            </Link>
-            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#076A88]'>Wallets</p>
-            <p className=' uppercase text-2xl md:text-4xl lg:text-6xl font-bold text-[#076A88]'>$5869</p>
+          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#FE6982] rounded-lg relative"> 
+            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Loss Paying - payout</p>
+            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹3 Lac</p>
+            <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>15,585 User Paying</p>
           </div>
         </Col>
+        <Col md={8} sm={12} xs={24}>
+          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#17E99C] rounded-lg relative"> 
+            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Paying user list</p>
+            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>15,550</p> 
+          </div>
+        </Col>
+        <Col md={8} sm={12} xs={24}>
+          <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#FFDD30] rounded-lg relative"> 
+            <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Payout user list</p>
+            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>12,250</p> 
+          </div>
+        </Col>
+         
       </Row>
 
       <Row gutter={[20, 20]} className='md:mt-10 mt-6'>
         <Col md={12} sm={24} xs={24} className='flex'>
           <div className="bg-white rounded-lg w-full">
             <div className="px-5 py-3 border-b border-slate-100 flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-dark">Sales By Category</h2>
+              <h2 className="text-xl font-semibold text-dark">Total Comparison</h2>
               <div className="w-full max-w-[136px]">
                 <Select
-                  defaultValue="Oct 2024" 
+                  defaultValue="week" 
                   className='!w-full !bg-[#F9F9F9]'
                   size='md'
                   // onChange={handleChange}
                   options={[ 
                     {
-                      value: 'Oct 2024',
-                      label: 'Oct 2024',
+                      value: 'week',
+                      label: 'Week',
                     },
                     {
-                      value: 'Sep 2024',
-                      label: 'Sep 2024',
+                      value: 'month',
+                      label: 'Month',
                     },
                     {
-                      value: 'Nov 2024',
-                      label: 'Nov 2024', 
+                      value: 'year',
+                      label: 'Year', 
                     },
                   ]}
                 />
@@ -160,25 +168,25 @@ const Dashboard = () => {
         <Col md={12} sm={24} xs={24} className='flex'>
           <div className="bg-white rounded-lg w-full">
             <div className="px-5 py-3 border-b border-slate-100 flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-dark">Sales By Category</h2>
+              <h2 className="text-xl font-semibold text-dark">Total Transactions</h2>
               <div className="w-full max-w-[136px]">
                 <Select
-                  defaultValue="Oct 2024" 
+                  defaultValue="week" 
                   className='!w-full !bg-[#F9F9F9]'
                   size='md'
                   // onChange={handleChange}
                   options={[ 
                     {
-                      value: 'Oct 2024',
-                      label: 'Oct 2024',
+                      value: 'week',
+                      label: 'Week',
                     },
                     {
-                      value: 'Sep 2024',
-                      label: 'Sep 2024',
+                      value: 'month',
+                      label: 'Month',
                     },
                     {
-                      value: 'Nov 2024',
-                      label: 'Nov 2024', 
+                      value: 'year',
+                      label: 'Year', 
                     },
                   ]}
                 />
@@ -189,15 +197,41 @@ const Dashboard = () => {
             </div>
           </div>
         </Col>
+        <Col span={24} className='flex'>
+          <div className="bg-white rounded-lg w-full">
+            <div className="px-5 py-3 border-b border-slate-100 flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-dark">Active Users</h2>
+              <div className="w-full max-w-[136px]">
+                <Select
+                  defaultValue="week" 
+                  className='!w-full !bg-[#F9F9F9]'
+                  size='md'
+                  // onChange={handleChange}
+                  options={[ 
+                    {
+                      value: 'week',
+                      label: 'Week',
+                    },
+                    {
+                      value: 'month',
+                      label: 'Month',
+                    },
+                    {
+                      value: 'year',
+                      label: 'Year', 
+                    },
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="p-4 flex justify-center">
+              <LineChart />
+            </div>
+          </div>
+        </Col>
       </Row>
 
-      <div className="md:mt-10 mt-6 bg-white rounded-lg">
-        <h2 className="text-xl font-bold text-dark px-5 py-3">Transactions</h2>
-        <Table columns={columns} dataSource={data} pagination={false}
-          scroll={{ x: 600 }}
-        /> 
-      </div>
-
+       
 
 
 
