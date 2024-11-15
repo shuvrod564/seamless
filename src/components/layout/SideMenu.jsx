@@ -36,11 +36,11 @@ const SideMenu = ({ resMenu, setResMenu, collapseMenu, setCollapseMenu }) => {
             title: 'Payouts',
             icon: <PayoutIcon />
         },
-        {
-            path: '/wallet',
-            title: 'Wallets',
-            icon: <WalletIcon />
-        },
+        // {
+        //     path: '/wallet',
+        //     title: 'Wallets',
+        //     icon: <WalletIcon />
+        // },
         {
             path: '#',
             title: 'Gateways',
