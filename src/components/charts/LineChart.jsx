@@ -7,7 +7,6 @@ const BasicLineChart = () => {
       type: 'line',
       height: 350,
     },
-   
     xaxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
     },
@@ -21,8 +20,8 @@ const BasicLineChart = () => {
   ];
 
   return (
-    <div>
-      <Chart options={options} series={series} type="line" height={350} />
+    <div className="chart-container">
+      <Chart options={options} series={series} type="line" height={350} width={'100%'} />
     </div>
   );
 };
