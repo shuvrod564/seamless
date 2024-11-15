@@ -99,34 +99,34 @@ const Dashboard = () => {
         <Col md={8} sm={12} xs={24}>
           <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#3A7AFE] rounded-lg relative"> 
             <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Total Paying</p>
-            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹7,00,000</p>
+            <p className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mb-2'>₹7,00,000</p>
             <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>18,995 User Payout</p>
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
           <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#00AFEF] rounded-lg relative"> 
             <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Total payouts</p>
-            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹10 Lac</p>
+            <p className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mb-2'>₹10 Lac</p>
             <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>25,550 User Payout</p>
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
           <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#FE6982] rounded-lg relative"> 
             <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Loss Paying - payout</p>
-            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>₹3 Lac</p>
+            <p className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mb-2'>₹3 Lac</p>
             <p className=' capitalize text-base lg:text-[17px] font-medium text-[#FFFFFF]'>15,585 User Paying</p>
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
           <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#17E99C] rounded-lg relative"> 
             <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Paying user list</p>
-            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>15,550</p> 
+            <p className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mb-2'>15,550</p> 
           </div>
         </Col>
         <Col md={8} sm={12} xs={24}>
           <div className="p-4 md:p-5 lg:p-8 2xl:p-10 bg-[#FFDD30] rounded-lg relative"> 
             <p className=' uppercase text-base md:text-lg lg:text-xl font-medium text-[#FFFFFF] mb-3'>Payout user list</p>
-            <p className='text-2xl md:text-4xl lg:text-6xl font-bold text-[#FFFFFF] mb-2'>12,250</p> 
+            <p className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFFFFF] mb-2'>12,250</p> 
           </div>
         </Col>
          
